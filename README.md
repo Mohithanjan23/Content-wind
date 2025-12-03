@@ -39,4 +39,40 @@ Backend: Node.js (Express)
 - Clean Express architecture with analyzers/
 
 ## 📂 Project Structure
+├── frontend/
+│ ├── src/
+│ │ ├── pages/ # Home, Analyzer, Report, About
+│ │ ├── components/ # UI blocks & cards
+│ │ ├── utils/ # analysis logic, download, formatting
+│ │ ├── App.jsx # App router
+│ │ ├── main.jsx # React entry
+│ │ └── index.css # Tailwind
+│ ├── index.html
+│ ├── vite.config.js
+│ └── package.json
+│
+└── backend/
+├── analyzers/ # analysis engine
+├── index.js # express server
+└── package.json
 
+## Frontend Setup (React + Vite)
+cd frontend
+npm install
+npm run dev
+
+Frontend will start at:
+👉 http://localhost:5173/
+
+## Backend Setup (Node.js + Express)
+cd backend
+npm install
+node index.js
+
+Backend runs on:
+👉 http://localhost:3001/
+
+# Frontend
+npm run build
+# Preview
+npm run preview
