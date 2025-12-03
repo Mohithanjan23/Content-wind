@@ -72,7 +72,7 @@ node index.js
 Backend runs on:
 👉 http://localhost:3001/
 
-# Frontend
+### Frontend
 npm run build
-# Preview
+### Preview
 npm run preview
