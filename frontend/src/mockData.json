@@ -1,0 +1,28 @@
+{
+  "topics": {
+    "tech": 82,
+    "cooking": 55,
+    "analogies": 73,
+    "reactjs": 90,
+    "angular": 65,
+    "education": 70,
+    "humor": 60
+  },
+  "recent_creators": [
+    {
+      "name": "CodeBites",
+      "topic": "reactjs",
+      "views": 12000
+    },
+    {
+      "name": "DevChef",
+      "topic": "tech-analogy",
+      "views": 8000
+    },
+    {
+      "name": "PlatForm",
+      "topic": "angular",
+      "views": 6000
+    }
+  ]
+}
