@@ -2,15 +2,15 @@
 A smart, fast, and creator-friendly tool that helps validate content ideas before you film or produce them.  
 It analyzes **trend strength**, **platform fit**, **keywords**, **hooks**, **retention tactics**, **hashtags**, and provides a full **feasibility score**.
 
-Built with ❤️ by **Mohith Anjan**  
+Built with by **Mohith Anjan**  
 Frontend: React + Vite + Tailwind  
 Backend: Node.js (Express)
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 🔎 Idea Analyzer
+###  Idea Analyzer
 - Extracts keywords from your content idea
 - Runs trend-based scoring (mock or backend-driven)
 - Computes platform fit for Instagram & LinkedIn
@@ -23,22 +23,22 @@ Backend: Node.js (Express)
   - Platform Breakdown
   - Competitor Check
 
-### 🎨 Beautiful UI
+###  Beautiful UI
 - Tailwind-powered ultra-clean design  
 - Gradient highlights and soft animations  
 - Fully responsive on mobile, tablet, and desktop  
 
-### ⚡ Fast Frontend Experience
+###  Fast Frontend Experience
 - Built with Vite for instant loading  
 - React Router for navigation  
 - Local analysis or backend-based scoring  
 
-### 🧠 Optional Backend (Node.js)
+###  Optional Backend (Node.js)
 - Analyze pitches server-side  
 - Extendable with real APIs (HuggingFace, Google Trends, YouTube stats)  
 - Clean Express architecture with analyzers/
 
-## 📂 Project Structure
+##  Project Structure
 ├── frontend/
 │ ├── src/
 │ │ ├── pages/ # Home, Analyzer, Report, About
