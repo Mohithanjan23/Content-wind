@@ -1,9 +1,12 @@
 // backend/index.js
 // Main entry for the backend server (Express)
 
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
-const { analyzePitchBackend } = require("./analyzers");
+
+const analyzeRoute = require("./routes/analyze");
+const historyRoute = require("./routes/history");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -20,25 +23,14 @@ app.get("/", (req, res) => {
   });
 });
 
-// Main analysis route
-app.post("/api/analyze", (req, res) => {
-  const { pitch, platforms } = req.body;
+// Modular Routes
+app.use("/api/analyze", analyzeRoute);
+app.use("/api/history", historyRoute);
 
-  if (!pitch || typeof pitch !== "string") {
-    return res.status(400).json({ error: "Pitch text is required." });
-  }
-
-  const selectedPlatforms = Array.isArray(platforms)
-    ? platforms
-    : ["instagram", "linkedin"]; // default
-
-  try {
-    const report = analyzePitchBackend(pitch, selectedPlatforms);
-    res.json(report);
-  } catch (err) {
-    console.error("Analyzer Error:", err);
-    res.status(500).json({ error: "Failed to analyze pitch." });
-  }
+// Global Error Handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: 'Something broke in the server!' });
 });
 
 // Start server

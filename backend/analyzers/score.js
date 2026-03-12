@@ -1,6 +1,6 @@
 // Scoring utilities
 
-const mockData = require("../mockData.json");
+const mockData = require("../../frontend/src/mockData.json");
 
 function keywordRelevance(keywords) {
   if (!keywords || keywords.length === 0) return 40;

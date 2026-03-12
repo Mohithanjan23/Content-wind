@@ -1,4 +1,4 @@
-const mockData = require("../mockData.json");
+const mockData = require("../../frontend/src/mockData.json");
 
 // Simple competitor matcher
 function competitorCheck(keywords) {

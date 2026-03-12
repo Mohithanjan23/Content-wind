@@ -1,6 +1,6 @@
 // Trend scoring using mock or real data.
 
-const mockData = require("../mockData.json");
+const mockData = require("../../frontend/src/mockData.json");
 
 function computeTrendScore(keywords) {
   if (!keywords || keywords.length === 0) return 40;
